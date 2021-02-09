@@ -17,7 +17,7 @@ func Example1() {
 }
 
 func Example2() {
-	o, err := Divide(6, 3)
+	o, err := Divide(0, 2.5)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -31,7 +31,7 @@ func Example2() {
 }
 
 // Divide a by b and return the answer
-func Divide(a, b int) (int, error) {
+func Divide(a, b float64) (float64, error) {
 	if b == 0 {
 		return 0, errors.New("Woah, can't divide by zero!")
 	}
