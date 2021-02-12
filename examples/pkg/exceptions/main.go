@@ -12,12 +12,12 @@ func Example1() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Print(b)
+	fmt.Print(string(b))
 
 }
 
 func Example2() {
-	o, err := Divide(0, 2.5)
+	o, err := Divide(5, 2)
 	if err != nil {
 		log.Fatal(err)
 	}
